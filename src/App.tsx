@@ -1,5 +1,5 @@
 import './App.css'
-import {Routes, Route } from "react-router"
+import { Routes, Route } from "react-router-dom"
 import Navbar from './components/Navbar';
 import Contact from "./pages/Contact"
 import Resume from "./pages/Resume"
@@ -12,9 +12,9 @@ function App() {
     <>
       <Navbar />
       <Routes>
-      <Route path='/contact' element={<Contact />} />
-      <Route path='/resume' element={<Resume />} />
-      <Route path='/project' element={<Projects />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/resume' element={<Resume />} />
+        <Route path='/project' element={<Projects />} />
       </Routes>
     </>
   )

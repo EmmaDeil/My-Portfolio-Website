@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface NavbarProps {
    links?: { name: string; href: string }[];
 }
 
 const defaultLinks = [
-   { name: 'Home', href: '/' },
-   { name: 'About', href: '/about' },
-   { name: 'Projects', href: '/projects' },
+   // { name: 'Home', href: '/' },
+   { name: 'Resume', href: '/resume' },
+   { name: 'Projects', href: '/project' },
    { name: 'Contact', href: '/contact' },
 ];
 
@@ -18,9 +19,9 @@ const Navbar: React.FC<NavbarProps> = ({ links = defaultLinks }) => {
          <ul style={styles.ul}>
             {links.map((link) => (
                <li key={link.name} style={styles.li}>
-                  <a href={link.href} style={styles.a}>
+                  <Link to={link.href} style={styles.a}>
                      {link.name}
-                  </a>
+                  </Link>
                </li>
             ))}
          </ul>

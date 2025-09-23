@@ -14,7 +14,7 @@ const getFeaturedProjects = () => [
     role: "Full-Stack Developer",
     teamSize: 1,
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    demoUrl: "https://portfolio.example.com",
+    demoUrl: "https://david-emmanuel-portfolio.onrender.com/",
     githubUrl: "https://github.com/example/portfolio"
   },
   {

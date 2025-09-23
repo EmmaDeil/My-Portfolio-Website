@@ -13,7 +13,7 @@ const Footer = () => {
                      href="tel:+1234567890"
                      className="text-indigo-600 hover:text-indigo-800 transition duration-200"
                   >
-                     123-456-7890
+                     +234 81 4767 7695
                   </a>
                </div>
 
@@ -26,7 +26,7 @@ const Footer = () => {
                      href="mailto:info@yoursite.com"
                      className="text-indigo-600 hover:text-indigo-800 transition duration-200"
                   >
-                     info@yoursite.com
+                     eclefzy@gmail.com
                   </a>
                </div>
 
@@ -55,7 +55,7 @@ const Footer = () => {
 
                      {/* Twitter */}
                      <a
-                        href="https://twitter.com/yourhandle"
+                        href="https://x.com/SirDeil"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 hover:text-indigo-600 transition duration-200"

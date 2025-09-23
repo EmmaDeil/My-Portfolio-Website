@@ -7,7 +7,7 @@ import Name from "./Name";
 // Define the navigation links
 const navLinks = [
    { href: "/about", label: "About" },
-   { href: "/project", label: "Projects" },
+   { href: "/projects", label: "Projects" },
    { href: "/contact", label: "Contact" },
 ];
 
@@ -65,8 +65,8 @@ const Navbar: React.FC = () => {
             {/* Mobile Navigation Menu */}
             <div
                className={`md:hidden mt-4 transition-all duration-300 ease-in-out ${isMenuOpen
-                     ? "max-h-64 opacity-100"
-                     : "max-h-0 opacity-0 overflow-hidden"
+                  ? "max-h-64 opacity-100"
+                  : "max-h-0 opacity-0 overflow-hidden"
                   }`}
             >
                <div className="flex flex-col space-y-3 pb-4">

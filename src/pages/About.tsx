@@ -121,7 +121,7 @@ export default function AboutPage() {
             <div>
               <p className="text-gray-700 leading-relaxed">
                 I am proficient in various programming languages and frameworks,
-                including Java, Python, JavaScript, and React. Additionally, I
+                including React, JavaScript, and TypeScript. Additionally, I
                 possess strong problem-solving capabilities and a keen eye for
                 detail, allowing me to develop robust and user-friendly
                 applications.
@@ -140,6 +140,7 @@ export default function AboutPage() {
                   <li>JavaScript & TypeScript</li>
                   <li>Tailwind CSS</li>
                   <li>HTML5 & CSS3</li>
+                  <li>Bootstrap</li>
                 </ul>
               </div>
 
@@ -150,9 +151,9 @@ export default function AboutPage() {
                 </h4>
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>Node.js & Express</li>
-                  <li>Python & Java</li>
+                  {/* <li>Python & Java</li> */}
                   <li>Next.js API Routes</li>
-                  <li>RESTful APIs</li>
+                  {/* <li>RESTful APIs</li> */}
                 </ul>
               </div>
 
@@ -162,10 +163,10 @@ export default function AboutPage() {
                   Database
                 </h4>
                 <ul className="text-sm text-gray-600 space-y-1">
-                  <li>PostgreSQL</li>
+                  {/* <li>PostgreSQL</li> */}
                   <li>MongoDB</li>
-                  <li>Prisma ORM</li>
-                  <li>SQL & NoSQL</li>
+                  {/* <li>Prisma ORM</li> */}
+                  {/* <li>SQL & NoSQL</li> */}
                 </ul>
               </div>
 
@@ -176,8 +177,8 @@ export default function AboutPage() {
                 </h4>
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>Git & GitHub</li>
-                  <li>Docker</li>
-                  <li>Vercel & AWS</li>
+                  <li>Render</li>
+                  {/* <li>Vercel & AWS</li> */}
                   <li>Framer Motion</li>
                 </ul>
               </div>
@@ -218,16 +219,11 @@ export default function AboutPage() {
             className="mt-8 text-center"
           >
             <CVDownloadButton
-              variant="primary"
-              size="lg"
+              variant="outline"
+              size="md"
               buttonText="Check Out My CV"
               className="mr-4"
             />
-            {/* <CVDownloadButton
-              variant="outline"
-              size="md"
-              buttonText="View Resume"
-            /> */}
           </motion.div>
       </div>
     </div>

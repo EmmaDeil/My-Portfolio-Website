@@ -1,5 +1,6 @@
 // pages/about.js
 import { motion } from "framer-motion";
+import CVDownloadButton from "../components/CVDownloadButton";
 
 // Framer Motion variants for section animation
 const sectionVariants = {
@@ -68,18 +69,18 @@ export default function AboutPage() {
             {/* University Education */}
             <div className="flex flex-col md:flex-row md:items-start gap-4">
               <div className="text-sm font-medium text-gray-600 md:w-24 flex-shrink-0">
-                2020 - 2024
+                2018 - 2021
               </div>
               <div className="flex-grow">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  University Name | Bachelor&apos;s Degree in Computer Science
+                  Gateway (ICT) Polytechnic, Saapade | Bachelor&apos;s Degree in Electrical and Electronics Engineering
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   I pursued my passion for technology and obtained a solid
-                  foundation in computer science, enhancing my problem-solving
-                  abilities and analytical skills. Specialized in software
+                  foundation in electrical and electronics engineering, enhancing my problem-solving.
+                  {/* abilities and analytical skills. Specialized in software
                   engineering, data structures, and modern web development
-                  frameworks.
+                  frameworks. */}
                 </p>
               </div>
             </div>
@@ -87,17 +88,16 @@ export default function AboutPage() {
             {/* High School Education */}
             <div className="flex flex-col md:flex-row md:items-start gap-4">
               <div className="text-sm font-medium text-gray-600 md:w-24 flex-shrink-0">
-                2016 - 2020
+                2015 - 2017
               </div>
               <div className="flex-grow">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  High School Name | High School Diploma
+                  Gateway (ICT) Polytechnic, Saapade | Ordinary National Diploma
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  I completed my high school education, where I discovered my
-                  enthusiasm for programming and began my journey into the world
-                  of software development. Focused on mathematics, science, and
-                  early programming concepts.
+                  I completed my Ordinary National Diploma education, where I discovered my
+                  enthusiasm for technology and how they can be applied in our real world and I was also taught on some basic on
+                  programming concepts. Focused on Electrical Engineering and Entrepreneurship.
                 </p>
               </div>
             </div>
@@ -208,7 +208,27 @@ export default function AboutPage() {
             connect with fellow developers who share the same passion for
             creating amazing digital experiences.
           </p>
+
+          {/* CV Download Button */}
         </motion.section>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.2, duration: 0.6 }}
+            className="mt-8 text-center"
+          >
+            <CVDownloadButton
+              variant="primary"
+              size="lg"
+              buttonText="Check Out My CV"
+              className="mr-4"
+            />
+            {/* <CVDownloadButton
+              variant="outline"
+              size="md"
+              buttonText="View Resume"
+            /> */}
+          </motion.div>
       </div>
     </div>
   );

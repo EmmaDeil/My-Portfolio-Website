@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
                         key={link.href}
                         to={link.href}
                         className="text-gray-600 hover:text-indigo-600 font-medium transition duration-200 border-b-2 border-transparent hover:border-indigo-600 pb-1"
-                     >
+                       >
                         {link.label}
                      </Link>
                   ))}
@@ -65,8 +65,8 @@ const Navbar: React.FC = () => {
             {/* Mobile Navigation Menu */}
             <div
                className={`md:hidden mt-4 transition-all duration-300 ease-in-out ${isMenuOpen
-                  ? "max-h-64 opacity-100"
-                  : "max-h-0 opacity-0 overflow-hidden"
+                     ? "max-h-64 opacity-100"
+                     : "max-h-0 opacity-0 overflow-hidden"
                   }`}
             >
                <div className="flex flex-col space-y-3 pb-4">

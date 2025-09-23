@@ -3,45 +3,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-// Mock data for featured projects
-const getFeaturedProjects = () => [
-  {
-    slug: "portfolio-website",
-    title: "Personal Portfolio",
-    shortDescription: "A modern, responsive portfolio website built with React and TypeScript.",
-    status: "completed",
-    category: "web-development",
-    role: "Full-Stack Developer",
-    teamSize: 1,
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    demoUrl: "https://david-emmanuel-portfolio.onrender.com/",
-    githubUrl: "https://github.com/example/portfolio"
-  },
-  {
-    slug: "ecommerce-app",
-    title: "E-Commerce Platform",
-    shortDescription: "Full-featured online store with payment integration and admin panel.",
-    status: "in-progress",
-    category: "web-development",
-    role: "Lead Developer",
-    teamSize: 3,
-    technologies: ["Next.js", "Node.js", "MongoDB", "Stripe", "Redux"],
-    demoUrl: null,
-    githubUrl: "https://github.com/example/ecommerce"
-  },
-  {
-    slug: "task-manager",
-    title: "Task Management App",
-    shortDescription: "Collaborative project management tool with real-time updates.",
-    status: "completed",
-    category: "productivity",
-    role: "Frontend Developer",
-    teamSize: 2,
-    technologies: ["React", "Socket.io", "Express", "PostgreSQL"],
-    demoUrl: "https://taskapp.example.com",
-    githubUrl: "https://github.com/example/taskmanager"
-  }
-];
+import { getFeaturedProjects } from "../data/projects";
 
 // Framer Motion variants for staggered animations
 const containerVariants = {
@@ -221,7 +183,7 @@ export default function HomePage() {
             }} // Lift on hover
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Link to={`/projects/${project.slug}`} className="block">
+            <Link to={`/project/${project.slug}`} className="block">
               <div className="bg-white p-6 rounded-lg shadow-xl border border-gray-100 h-full">
                 {/* Project Status Badge */}
                 <div className="flex justify-between items-start mb-3">
@@ -252,7 +214,7 @@ export default function HomePage() {
                 {/* Project Role & Team Size */}
                 <div className="text-sm text-gray-500 mb-3">
                   <span className="font-medium">{project.role}</span>
-                  {project.teamSize > 1 && (
+                  {project.teamSize && project.teamSize > 1 && (
                     <span> • Team of {project.teamSize}</span>
                   )}
                 </div>

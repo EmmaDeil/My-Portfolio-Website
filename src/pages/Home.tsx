@@ -90,7 +90,7 @@ export default function HomePage() {
             initial={{ scale: 0, rotate: -180 }}
             animate={{ scale: 1, rotate: 0 }}
             transition={{ duration: 1, type: "spring", stiffness: 100 }}
-            className="relative w-86 h-86 mx-auto mb-8"
+            className="relative w-64 h-64 mx-auto mb-8"
           >
             {/* Profile Picture */}
             <div className="w-full h-full rounded-full overflow-hidden border-4 border-indigo-500 shadow-2xl bg-gradient-to-br from-indigo-100 to-purple-100">
@@ -115,53 +115,48 @@ export default function HomePage() {
             </div>
 
             {/* Orbiting Tech Icons */}
-            {techIcons.map((tech, index) => (
-              <motion.div
-                key={tech.name}
-                className="absolute w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-lg border-2 border-gray-200"
-                style={{
-                  top: "50%",
-                  left: "50%",
-                  transformOrigin: "50% 50%",
-                }}
-                initial={{
-                  x: -24,
-                  y: -24,
-                  rotate: (360 / techIcons.length) * index,
-                }}
-                animate={{
-                  x:
-                    -24 +
-                    Math.cos(
-                      ((360 / techIcons.length) * index * Math.PI) / 180
-                    ) *
-                    180,
-                  y:
-                    -24 +
-                    Math.sin(
-                      ((360 / techIcons.length) * index * Math.PI) / 180
-                    ) *
-                    180,
-                  rotate: [
-                    (360 / techIcons.length) * index,
-                    (360 / techIcons.length) * index + 360,
-                  ],
-                }}
-                transition={{
-                  delay: tech.delay,
-                  duration: 30,
-                  repeat: Infinity,
-                  ease: "linear",
-                }}
-                whileHover={{
-                  scale: 1.2,
-                  boxShadow: "0 8px 25px rgba(0,0,0,0.15)",
-                }}
-                title={tech.name}
-              >
-                <span className="text-2xl">{tech.symbol}</span>
-              </motion.div>
-            ))}
+            {techIcons.map((tech, index) => {
+              const orbitRadius = 140; // Distance from center (slightly outside the 256px container)
+
+              return (
+                <motion.div
+                  key={tech.name}
+                  className="absolute w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-lg border-2 border-gray-200"
+                  style={{
+                    top: "50%",
+                    left: "50%",
+                    transformOrigin: "50% 50%",
+                  }}
+                  initial={{
+                    x: -24,
+                    y: -24,
+                    rotateZ: index * 45, // Start each icon at a different position
+                  }}
+                  animate={{
+                    rotateZ: [index * 45, index * 45 + 360], // Full 360 degree rotation
+                  }}
+                  transition={{
+                    delay: tech.delay,
+                    duration: 20,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                  transformTemplate={({ rotateZ }) => {
+                    const angle = parseFloat(String(rotateZ ?? "0")) || 0;
+                    const x = -24 + Math.cos((angle * Math.PI) / 180) * orbitRadius;
+                    const y = -24 + Math.sin((angle * Math.PI) / 180) * orbitRadius;
+                    return `translateX(${x}px) translateY(${y}px)`;
+                  }}
+                  whileHover={{
+                    scale: 1.2,
+                    boxShadow: "0 8px 25px rgba(0,0,0,0.15)",
+                  }}
+                  title={tech.name}
+                >
+                  <span className="text-2xl">{tech.symbol}</span>
+                </motion.div>
+              );
+            })}
           </motion.div>
         </div>
 
@@ -232,10 +227,10 @@ export default function HomePage() {
                 <div className="flex justify-between items-start mb-3">
                   <span
                     className={`px-2 py-1 text-xs font-medium rounded-full ${project.status === "completed"
-                        ? "bg-green-100 text-green-800"
-                        : project.status === "in-progress"
-                          ? "bg-blue-100 text-blue-800"
-                          : "bg-gray-100 text-gray-800"
+                      ? "bg-green-100 text-green-800"
+                      : project.status === "in-progress"
+                        ? "bg-blue-100 text-blue-800"
+                        : "bg-gray-100 text-gray-800"
                       }`}
                   >
                     {project.status === "completed"

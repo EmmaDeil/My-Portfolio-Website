@@ -97,6 +97,22 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/EmmaDeil/blog-platform",
     image: "https://via.placeholder.com/800x600/7C3AED/ffffff?text=Blog+Platform",
     featured: false
+  },
+  {
+   id: 6,
+   slug: "Nigerian frenchgirl",
+   title: "The Nigerian frenchgirl",
+   shortDescription: "This is a project that has to do with the learning of french in the nigerian market",
+   longDescription: "This is where we want people to come teach and learn french",
+   technologies: ["React", "MongoDB"],
+   status: "in-progress",
+   category: "web-development",
+   role: "Intern",
+   teamSize: 2,
+   demoUrl: "",
+   githubUrl: "",
+   image: "",
+   featured: false
   }
 ];
 

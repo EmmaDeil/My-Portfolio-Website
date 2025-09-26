@@ -118,7 +118,7 @@ export const projects: Project[] = [
    id: 7,
    slug: "my-funds-request-app",
    title: "My Funds Request App",
-   shortDescription: "A comprehensive enterprise-grade web application for managing fund requests with automated email notifications, PDF generation, and approval workflows. Built with modern technologies and designed for scalability and professional use.",
+   shortDescription: "A comprehensive enterprise-grade web application for managing fund requests with automated email notifications, PDF generation, and approval workflows.",
    longDescription: "The Fund Request Application is an enterprise-grade web application designed to streamline and automate the corporate fund request and approval process. This full-stack solution eliminates manual paperwork and provides a digital workflow that ensures transparency, accountability, and efficiency in financial request management. Users can submit detailed fund requests, which are then routed through a multi-level approval process. The application features automated email notifications to keep all stakeholders informed at each stage of the request lifecycle. Additionally, it includes functionality for generating professional PDF documents of fund requests for record-keeping and auditing purposes.",
    technologies: ["React.js", "Node.js", "Express.js", "Nodemailer", "PDFKit", "CSS3", "HTML5", "JavaScript", "Mongoose", "axios"],
    status: "completed",

@@ -47,7 +47,7 @@ export const projects: Project[] = [
     teamSize: 3,
     demoUrl: null,
     githubUrl: "https://github.com/EmmaDeil/ecommerce-platform",
-    image: "https://via.placeholder.com/800x600/059669/ffffff?text=E-Commerce+Platform",
+    image: "/ladeilapp.png",
     featured: false
   },
   {
@@ -124,11 +124,11 @@ export const projects: Project[] = [
    status: "completed",
    category: "web-development",
    role: "Intern",
-   teamSize: 2,
-   demoUrl: "",
+   teamSize: 1,
+   demoUrl: "https://my-fund-request-app.onrender.com/",
    githubUrl: "https://github.com/EmmaDeil/My-Fund-Request-App.git",
-   image: "",
-   featured: false
+   image: "/fundrequest.png",
+   featured: true
   }
 ];
 

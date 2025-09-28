@@ -20,18 +20,18 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    slug: "portfolio-website",
-    title: "Personal Portfolio Website",
-    shortDescription: "A modern, responsive portfolio website built with React and TypeScript.",
-    longDescription: "This project showcases my skills in modern web development using React, TypeScript, and Tailwind CSS. It features smooth animations, responsive design, and optimized performance. The portfolio includes sections for projects, about me, and contact information, all built with accessibility and user experience in mind.",
+    slug: "The Fuud Analytics Board",
+    title: "The Fuud Analytics Board",
+    shortDescription: "A modern analytics dashboard for fund request management.",
+    longDescription: "This project showcases my skills in modern web development using React, TypeScript, and Tailwind CSS. It features smooth animations, responsive design, and optimized performance. The dashboard includes sections for real-time analytics, user management, and order tracking, all built with accessibility and user experience in mind.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
     status: "completed",
     category: "web-development",
     role: "Full-Stack Developer",
     teamSize: 1,
     demoUrl: "https://david-emmanuel-portfolio.onrender.com",
-    githubUrl: "https://github.com/EmmaDeil/My-Portfolio-Website.git",
-    image: "https://via.placeholder.com/800x600/4F46E5/ffffff?text=Portfolio+Website",
+    // githubUrl: "https://github.com/EmmaDeil/My-Portfolio-Website.git",
+    image: "/analytics_board.png",
     featured: true
   },
   {

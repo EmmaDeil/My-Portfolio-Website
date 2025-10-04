@@ -129,6 +129,22 @@ export const projects: Project[] = [
    githubUrl: "https://github.com/EmmaDeil/My-Fund-Request-App.git",
    image: "/fundrequest.png",
    featured: true
+  },
+  {
+    id: 8,
+    slug: "guest-management-system",
+    title: "Guest Management System",
+    shortDescription: "A comprehensive system for managing guest check-ins, bookings, and services.",
+    longDescription: "The Guest Management System is designed to streamline the process of managing hotel guests, from check-in to check-out. It includes features for booking management, guest profiles, and service requests. The system aims to enhance the guest experience by providing a seamless and efficient management tool for hotel staff.",
+    technologies: ["React", "Node.js", "MongoDB", "Express"],
+    status: "in-progress",
+    category: "web-development",
+    role: "Full-Stack Developer",
+    teamSize: 1,
+    demoUrl: null,
+    githubUrl: "https://github.com/EmmaDeil/guest-management-system",
+    image: "https://via.placeholder.com/800x600/34D399/ffffff?text=Guest+Management+System",
+    featured: false
   }
 ];
 

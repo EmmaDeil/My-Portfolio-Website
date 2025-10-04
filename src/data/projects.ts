@@ -134,16 +134,16 @@ export const projects: Project[] = [
     id: 8,
     slug: "guest-management-system",
     title: "Guest Management System",
-    shortDescription: "A comprehensive system for managing guest check-ins, bookings, and services.",
-    longDescription: "The Guest Management System is designed to streamline the process of managing hotel guests, from check-in to check-out. It includes features for booking management, guest profiles, and service requests. The system aims to enhance the guest experience by providing a seamless and efficient management tool for hotel staff.",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
+    shortDescription: "Guest Management System - A modern, cloud-based visitor registration platform that streamlines guest check-ins using QR code technology. Organizations can generate unique QR codes for their locations, allowing visitors to sign in instantly by scanning with their phones. Features include real-time guest tracking, automated ID card assignment, minimum visit time enforcement, and comprehensive admin dashboards. Built with Next.js and Express.js, deployed on Vercel and Render with MongoDB Atlas for secure data management.",
+    longDescription: "The Guest Management System is designed to streamline the process of managing visitors, from check-in to check-out. It includes features for booking management, guest profiles, and service requests. The system aims to enhance the guest experience by providing a seamless and efficient management tool for hotel staff.",
+    technologies: ["React", "Node.js", "MongoDB", "Express", "Next.js", "Tailwind CSS", "QRCode", "Mongoose", "axios", "Vercel", "Render", "MongoDB Atlas"],
     status: "completed",
     category: "web-development",
     role: "Full-Stack Developer",
     teamSize: 1,
     demoUrl: "https://gms-sigma-two.vercel.app/",
     githubUrl: "https://github.com/EmmaDeil/GuestManagementSystem.git",
-    image: "/gms.png",
+    image: "/Gms.png",
     featured: true
   }
 ];

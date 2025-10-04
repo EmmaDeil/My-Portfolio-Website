@@ -20,8 +20,8 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    slug: "The Fund Analytics Board",
-    title: "The Fund Analytics Board",
+    slug: "The Funds Analytics Board",
+    title: "The Funds Analytics Board",
     shortDescription: "Fund analytics board is a comprehensive web-based fund request management dashboard with real-time analytics, PDF generation, and secure retirement workflows. It provides a complete administrative interface for monitoring, approving, and managing fund requests with integrated email notifications and document export capabilities.",
     longDescription: "Fund analytics board is a full-stack web application designed to streamline the fund request management process for organizations. Built as a self-contained dashboard, it serves as the central hub for administrators to oversee all fund request activities with powerful analytics and automation features. The application offers a user-friendly interface for submitting, tracking, and approving fund requests, complete with real-time data visualization through charts and graphs. Key functionalities include automated email notifications to keep stakeholders informed, PDF generation for official documentation, and a secure retirement workflow to ensure proper handling of funds. The dashboard is built using modern web technologies, ensuring scalability, security, and ease of use for administrators",
     technologies: ["MongoDB", "Express.js", "Node.js", "Mongoose", "Nodemailer", "PDFKit", "CORS", "Chart.js", "dotenv", "HTML5", "CSS3", "JavaScript", "RESTful API"],
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     demoUrl: "https://myfunddashboard.onrender.com/",
     githubUrl: "https://github.com/EmmaDeil/My-Fund-Request-App.git",
     image: "/analytics_board.png",
-    featured: true
+    featured: false
   },
   {
     id: 2,

@@ -125,7 +125,7 @@ export const projects: Project[] = [
    category: "web-development",
    role: "Intern",
    teamSize: 1,
-   demoUrl: "https://my-fund-request-app.onrender.com/",
+   demoUrl: "https://frapp-c2kh.onrender.com/",
    githubUrl: "https://github.com/EmmaDeil/My-Fund-Request-App.git",
    image: "/fundrequest.png",
    featured: true

@@ -52,8 +52,8 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    slug: "task-manager",
-    title: "Task Management App",
+    slug: "Org-task-manager",
+    title: "Org Management App",
     shortDescription: "Collaborative project management tool with real-time updates.",
     longDescription: "A collaborative task management application that enables teams to organize projects, assign tasks, and track progress in real-time. Built with React and Socket.io for real-time communication, featuring drag-and-drop interfaces, file attachments, comments, and notification systems.",
     technologies: ["React", "Socket.io", "Express", "PostgreSQL", "Material-UI"],
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     role: "Frontend Developer",
     teamSize: 2,
     demoUrl: "https://taskapp.example.com",
-    githubUrl: "https://github.com/EmmaDeil/task-manager-app",
+    githubUrl: "https://github.com/EmmaDeil/To-do-app.git",
     image: "https://via.placeholder.com/800x600/DC2626/ffffff?text=Task+Manager",
     featured: true
   },

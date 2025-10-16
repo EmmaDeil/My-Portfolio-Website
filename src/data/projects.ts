@@ -83,7 +83,7 @@ export const projects: Project[] = [
     featured: false
   },
   {
-    id: 5,
+    id: 9,
     slug: "blog-platform",
     title: "Blog Publishing Platform",
     shortDescription: "Modern blogging platform with markdown support and user management.",
@@ -145,6 +145,22 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/EmmaDeil/GuestManagementSystem.git",
     image: "/Gms.png",
     featured: true
+  },
+  {
+    id: 5,
+    slug: "team-schedule-calendar",
+    title: "Team Schedule Calendar",
+    shortDescription: "A collaborative calendar application for managing team schedules and events.",
+    longDescription: "The Team Schedule Calendar is designed to help teams manage their schedules and events more effectively. It includes features for creating and sharing events, setting reminders, and integrating with other calendar applications. The goal is to improve team collaboration and ensure that everyone is on the same page regarding upcoming events.",
+    technologies: ["React", "Node.js", "MongoDB", "Express", "FullCalendar", "CSS3", "HTML5", "JavaScript"],
+    status: "completed",
+    category: "web-development",
+    role: "Full-Stack Developer",
+    teamSize: 1,
+    demoUrl: "https://team-schedule-calendar.onrender.com/",
+    githubUrl: "https://github.com/EmmaDeil/Team-Schedule-Calendar.git",
+    image: "/Team calendar.png",
+    featured: false
   }
 ];
 

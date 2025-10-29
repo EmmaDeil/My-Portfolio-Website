@@ -89,7 +89,7 @@ export const projects: Project[] = [
     shortDescription: "Modern blogging platform with markdown support and user management.",
     longDescription: "A full-featured blogging platform built with modern web technologies. Includes user authentication, markdown editor with live preview, comment system, tag-based categorization, and SEO optimization. Features responsive design and admin dashboard for content management.",
     technologies: ["React", "Node.js", "MongoDB", "Markdown", "JWT"],
-    status: "in-progress",
+    status: "planned",
     category: "web-development",
     role: "Full-Stack Developer",
     teamSize: 1,

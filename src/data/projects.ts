@@ -161,6 +161,22 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/EmmaDeil/Team-Schedule-Calendar.git",
     image: "/Team calendar.png",
     featured: false
+  },
+  {
+    id: 10,
+    slug: "attendance-app",
+    title: "Attendance App",
+    shortDescription: "A web application for tracking employee attendance and managing leave requests.",
+    longDescription: "The Attendance App is designed to help organizations manage employee attendance more effectively. It includes features for clocking in and out, tracking hours worked, and submitting leave requests. The goal is to provide a comprehensive solution for attendance management that is both user-friendly and efficient.",
+    technologies: ["React", "MongoDB"],
+    status: "in-progress",
+    category: "web-development",
+    role: "Full-stack Developer",
+    teamSize: 0,
+    demoUrl: "https://att-app.onrender.com/",
+    githubUrl: "https://github.com/EmmaDeil/attendance-app.git",
+    image: "",
+    featured: false
   }
 ];
 

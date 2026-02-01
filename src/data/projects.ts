@@ -181,15 +181,15 @@ export const projects: Project[] = [
   {
     id: 11,
     slug: "Asset-app",
-    title: "Asset Management App",
+    title: "Assetflow Asset Management App",
     shortDescription: "A web application for tracking and managing company assets.",
     longDescription: "The Asset Management App is designed to help organizations keep track of their assets more effectively. It includes features for adding and updating asset information, tracking asset locations, and generating reports. The goal is to provide a comprehensive solution for asset management that improves efficiency and accountability.",
-    technologies: ["React", "MongoDB"],
+    technologies: ["React", "MongoDB", "Express", "Node.js", "Mongoose", "Tailwind CSS", "HTML5", "JavaScript"],
     status: "in-progress",
     category: "web-development",
     role: "Full-stack Developer",
     teamSize: 0,
-    demoUrl: "https://assets-tagging-software.vercel.app/login",
+    demoUrl: "https://assetflow-3gdr.onrender.com",
     githubUrl: "https://github.com/EmmaDeil/Assets-tagging-software-.git",
     image: "/Asset.png",
     featured: true
